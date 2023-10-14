@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+	<html>
+		<head>
+			<title>
+				Tan Moodboard
+			</title>
+			<link rel="shortcut icon" type="image/jpg" href="Images/Tan_favicon.png">
+			<link rel="stylesheet" type="text/css" href="CSS/Tan_moodboard.css">
+			<!--google fonts-->
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+			<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost&display=swap" rel="stylesheet">
+			<!--end of google fonts-->
+			<script>
+			</script>
+
+		</head>
+
+		<body>
+			<div id="titlebox">
+				<h1 id="title"> Haylie Tan's Moodboard</h1>
+			</div>
+			
+			<div id="offer">
+				<p> I strive to bring organization and <mark>new perspectives</mark> for website users. I contribute <mark>minimalistic designs</mark> that are aesthetically pleasing, yet easy to navigate. </p>
+			</div>
+
+			<div id="colortags">
+				<div id="white">
+					<span id="dot1">
+					</span>
+					<span id="dot2">
+					</span>
+					<span id="dot3">
+					</span>
+					<span id="dot4">
+					</span>
+
+					<div id="hexcodes">
+						<span class="code">
+							<p> #91684a #f0e5d8 #ff9292 #aa8976</p>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="images">
+				<a href="https://kravebeauty.com/" target="_blank">
+					<img src="Images/Tan_artistic.png" height="200px" width="200px" alt="Artistic">
+				</a>
+				<a href="https://puritoen.com/" target="_blank">
+					<img src="Images/Tan_dependable.png" height="200px" width="200px" alt="Dependable">
+				</a>
+				<a href="https://versedskin.com/" target="_blank">
+					<img src="Images/Tan_dedicated.png" height="200px" width="200px" alt="Dedicated">
+				</a>
+				<a href="https://www.viki.com/" target="_blank">
+					<img src="Images/Tan_optimistic.png" height="200px" width="200px" alt="optimistic">
+				</a>
+				<a href="https://us.polaroid.com/" target="_blank">
+					<img src="Images/Tan_diligent.png" height="200px" width="200px"  alt="diligent">
+				</a>
+			</div>
+
+			<!--<div id="encompass">
+				<img src="Images/Tan_wall.jpg" width="350px" alt="Desk grid with images">
+				<img src="Images/Tan_posters.jpg"  width="300px" alt="pile of posters">
+				<img src="Images/Tan_dog.jpg" width="300px" alt="dog">
+				<img src="Images/Tan_cd.jpg" width="300px" alt="CD player">
+				<img src="Images/Tan_ball.jpg" width="300px" alt="Posters hung up">
+			</div>-->
+
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <img src="Images/Tan_wall.jpg" width="350px" alt="Desk grid with images">
+				  <div class="text">Grid with images.</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="Images/Tan_posters.jpg"  width="300px" alt="pile of posters">
+				  <div class="text">Pile of Posters.</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="Images/Tan_dog.jpg" width="300px" alt="dog">
+				  <div class="text">A dog in the sunlight.</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="Images/Tan_cd.jpg" width="300px" alt="CD player">
+				  <div class="text">CD Player.</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <img src="Images/Tan_ball.jpg" width="300px" alt="Posters hung up">
+				  <div class="text">A wall of posters.</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				  <span class="dot" onclick="currentSlide(4)"></span> 
+				  <span class="dot" onclick="currentSlide(5)"></span>   
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+			<a href="Biblio/Tan_bibliography.html" target="_blank">
+				<h3 id="Biblio" ><mark> Bibliography </mark></h3>
+			</a>
+
+			<h6 id="bangers"> BANGERS </h6>
+			<h6 id="jost"> Jost </h6>
+
+		</body>
+
+	</html>
+
+<!--
+
+Bibliography citations
+“Google Fonts.” Google Fonts, fonts.google.com/specimen/Jost?sidebar.open=true&selection.family=Bangers.
+“CSS Background-Color Property.” Www.w3schools.com, www.w3schools.com/cssref/pr_background-color.asp.
+“HTML Mark Tag.” Www.w3schools.com, www.w3schools.com/tags/tag_mark.asp.
+“CSS Layout - Horizontal & Vertical Align.” Www.w3schools.com, www.w3schools.com/css/css_align.asp.
+“Word-Spacing - CSS: Cascading Style Sheets | MDN.” Developer.mozilla.org, developer.mozilla.org/en-US/docs/Web/CSS/word-spacing.
+“How to Add a Favicon to Your Website with HTML.” DigitalOcean, www.digitalocean.com/community/tutorials/how-to-add-a-favicon-to-your-website-with-html.
+“Color Hunt - Color Palettes for Designers and Artists.” Colorhunt.co, colorhunt.co/.
+“”. Photo Editor : Pixlr.com - Image Editing Online, 2019, pixlr.com/. ‌
+“Color Hunt - Color Palettes for Designers and Artists.” Colorhunt.co, colorhunt.co/.
+Savage. “Procreate®.” Procreate, 2019, procreate.art/.
+“Papers Free Vector Icons Designed by Freepik.” Flaticon, www.flaticon.com/free-icon/papers_3782190?term=paperclip&page=1&position=26&page=1&position=26&related_id=3782190&origin=search.
+“How to Create a Slideshow.” W3schools.com, 2019, www.w3schools.com/howto/howto_js_slideshow.asp.
+
+
+-->
